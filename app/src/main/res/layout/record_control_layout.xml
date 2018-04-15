@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#80C0C0C0">
+
+    <LinearLayout
+        android:id="@+id/record_time_status_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <Chronometer
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:format="00:00:00"
+            android:textColor="#fff"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在录屏"
+            android:textColor="#fff"
+            android:layout_marginTop="6dp"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/start_record_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_toEndOf="@+id/record_time_status_layout"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/start_record_icon"/>
+
+    <ImageView
+        android:id="@+id/record_voice_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_toEndOf="@+id/start_record_btn"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/start_record_icon"/>
+
+    <ImageView
+        android:id="@+id/close_record_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/record_voice_btn"
+        android:src="@mipmap/close_record_nor_icon"/>
+
+</RelativeLayout>
